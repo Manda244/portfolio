@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio — Mandaniaina</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">RASOLOMON Mandaniaina Fanomezantsoa</h1>
+      <nav class="nav">
+        <a href="#about">À propos</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero container">
+      <img src="images/avatar.svg" alt="avatar" class="avatar">
+      <div>
+        <h2>Bonjour — je suis RASOLOMON Mandaniaina Fanomezantsoa</h2>
+        <p>Développeur·se web / Designer / Créateur·rice de solutions numériques.</p>
+        <p class="actions">
+          <a class="btn" href="#projects">Voir mes projets</a>
+          <a class="btn outline" href="#contact">Me contacter</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="about" class="about container">
+      <h3>À propos</h3>
+      <p>Je construis des interfaces accessibles, rapides et élégantes. J'aime travailler sur des applications web modernes, l'UX et l'optimisation des performances.</p>
+    </section>
+
+    <section id="projects" class="projects container">
+      <h3>Projets</h3>
+      <div class="grid">
+        <article class="card">
+          <img src="images/avatar.svg" alt="libft">
+          <h4>libft <span style="font-size:0.8rem;color:var(--muted);">(terminé)</span></h4>
+          <p>Bibliothèque personnelle en C reproduisant des fonctions standard (malloc, string, list, etc.). Objectif: comprendre les fondamentaux du langage et les conventions du code propre.</p>
+          <p><a href="https://github.com/Manda244/42_libft" class="link" target="_blank" rel="noopener noreferrer">Voir le dépôt GitHub</a></p>
+        </article>
+
+        <article class="card">
+          <img src="images/avatar.svg" alt="ft_printf">
+          <h4>ft_printf <span style="font-size:0.8rem;color:var(--muted);">(terminé)</span></h4>
+          <p>Implémentation de <code>printf</code> en C: gestion des conversions, flags, width et precision. Travail sur le parsing et la gestion fine des formats.</p>
+          <p><a href="https://github.com/Manda244/printf" class="link" target="_blank" rel="noopener noreferrer">Voir le dépôt GitHub</a></p>
+        </article>
+
+        <article class="card">
+          <img src="images/avatar.svg" alt="projet 3">
+          <h4>Projet 3</h4>
+          <p>Courte description du projet. Tech: Python, Data.</p>
+          <p><a href="#" class="link">Voir sur GitHub</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h3>Contact</h3>
+      <p>Envoyez-moi un e-mail: <a href="mailto:rasolomonmandaniaina@gmail.com">rasolomonmandaniaina@gmail.com</a></p>
+  <p>Ou retrouvez-moi sur <a href="https://github.com/Manda244" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="Voir mon profil GitHub"><img src="images/github.svg" alt="GitHub" /></a> · <a href="#">LinkedIn</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> RASOLOMON Mandaniaina Fanomezantsoa — Tous droits réservés</div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

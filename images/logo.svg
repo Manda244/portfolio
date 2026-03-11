@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 64">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#6d28d9"/>
+      <stop offset="1" stop-color="#4f46e5"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="64" rx="12" fill="#071827"/>
+  <g font-family="Inter, sans-serif" font-weight="700" font-size="28" fill="url(#g)" text-anchor="start">
+    <text x="18" y="39">RASOLOMON</text>
+  </g>
+  <g font-family="Inter, sans-serif" font-weight="600" font-size="14" fill="#98a8bf" text-anchor="start">
+    <text x="138" y="38">Mandaniaina</text>
+  </g>
+</svg>
