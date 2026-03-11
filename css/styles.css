@@ -29,7 +29,8 @@ body{
 .btn.outline{background:transparent;border:1px solid rgba(255,255,255,0.06)}
 .about, .projects, .contact{padding:2rem 0}
 .projects .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:var(--gap)}
-.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:1rem;border-radius:var(--radius);}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:1rem;border-radius:var(--radius);box-shadow:0 4px 6px -1px rgba(139, 0, 0, 0.3), 0 2px 4px -1px rgba(139, 0, 0, 0.2);transition:transform 0.3s ease, box-shadow 0.3s ease;}
+.card:hover{transform:translateY(-5px);box-shadow:0 10px 15px -3px rgba(139, 0, 0, 0.4), 0 4px 6px -2px rgba(139, 0, 0, 0.3);}
 .card img{width:100%;height:120px;object-fit:cover;border-radius:8px}
 .card h4{margin:.5rem 0}
 .link{color:var(--accent);text-decoration:none}
