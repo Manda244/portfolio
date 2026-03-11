@@ -39,6 +39,8 @@ body{
   .site-header .container{padding:0 1rem}
 }
 
+.profil{width:150px;height:150px;border-radius:50%;border:3px solid rgba(255,255,255,0.04);object-fit:cover;flex-shrink:0}
+
 /* Social icon styles */
 .social-link img{width:32px;height:32px;vertical-align:middle;border-radius:8px;border:1px solid rgba(255,255,255,0.03)}
 .social-link{display:inline-block;margin-right:.5rem}
