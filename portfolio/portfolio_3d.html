@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio 3D</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- 3D Canvas -->
+<canvas id="canvas3d"></canvas>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">Mandaniaina F<span>.</span>dev</div>
+  <ul>
+    <li><a href="#hero">Accueil</a></li>
+    <li><a href="#skills">Compétences</a></li>
+    <li><a href="#projects">Projets</a></li>
+    <li><a href="#cv" class="nav-cta">CV</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-label">// Développeur Full Stack &amp; Designer</div>
+  <h1 class="hero-title">
+    <span class="line1">RASOLOMON</span>
+    <span class="line2">Mandaniana F</span>
+    <span class="line3">DEV.</span>
+  </h1>
+  <p class="hero-desc">
+    Je crée des expériences numériques immersives, du frontend interactif aux architectures backend robustes. Basé à Antananarivo, Madagascar.
+  </p>
+  <div class="hero-buttons">
+    <a href="#projects" class="btn-primary">Voir mes projets</a>
+    <a href="#cv" class="btn-secondary">↓ Télécharger CV</a>
+  </div>
+  <div class="hero-stats">
+    <div class="stat-item">
+      <span class="stat-number" data-count="12">0</span>
+      <span class="stat-label">Projets livrés</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number" data-count="4">0</span>
+      <span class="stat-label">Années d'exp.</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number" data-count="8">0</span>
+      <span class="stat-label">Technologies</span>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" style="min-height:auto">
+  <div class="section-header reveal">
+    <span class="section-num">01</span>
+    <h2 class="section-title">Compétences</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="skills-grid">
+    <div class="skill-card tilt-card reveal" data-delay="0">
+      <div class="skill-lang">
+        <div class="skill-icon" style="background:#f7df1e22">⚡</div>
+        JavaScript
+      </div>
+      <div style="font-size:0.72rem;color:var(--muted)">ES6+, DOM, Async/Await, APIs</div>
+      <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="92" style="background:linear-gradient(90deg,#f7df1e,#f0a500)"></div></div>
+      <span class="skill-pct">92%</span>
+    </div>
+
+    <div class="skill-card tilt-card reveal" data-delay="0.1">
+      <div class="skill-lang">
+        <div class="skill-icon" style="background:#61dafb22">⚛️</div>
+        React / Next.js
+      </div>
+      <div style="font-size:0.72rem;color:var(--muted)">Hooks, Context, SSR, App Router</div>
+      <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="88" style="background:linear-gradient(90deg,#61dafb,#0070f3)"></div></div>
+      <span class="skill-pct">88%</span>
+    </div>
+
+    <div class="skill-card tilt-card reveal" data-delay="0.2">
+      <div class="skill-lang">
+        <div class="skill-icon" style="background:#3776ab22">🐍</div>
+        Python
+      </div>
+      <div style="font-size:0.72rem;color:var(--muted)">Django, FastAPI, Data Science</div>
+      <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="80" style="background:linear-gradient(90deg,#3776ab,#ffd343)"></div></div>
+      <span class="skill-pct">80%</span>
+    </div>
+
+    <div class="skill-card tilt-card reveal" data-delay="0.3">
+      <div class="skill-lang">
+        <div class="skill-icon" style="background:#00000022;border:1px solid #333">🖤</div>
+        TypeScript
+      </div>
+      <div style="font-size:0.72rem;color:var(--muted)">Types, Generics, Interfaces, Zod</div>
+      <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="82"></div></div>
+      <span class="skill-pct">82%</span>
+    </div>
+
+    <div class="skill-card tilt-card reveal" data-delay="0.4">
+      <div class="skill-lang">
+        <div class="skill-icon" style="background:#68a06322">🟢</div>
+        Node.js
+      </div>
+      <div style="font-size:0.72rem;color:var(--muted)">Express, REST APIs, WebSockets</div>
+      <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="85" style="background:linear-gradient(90deg,#68a063,#44883e)"></div></div>
+      <span class="skill-pct">85%</span>
+    </div>
+
+    <div class="skill-card tilt-card reveal" data-delay="0.5">
+      <div class="skill-lang">
+        <div class="skill-icon" style="background:#336791">🐘</div>
+        SQL / PostgreSQL
+      </div>
+      <div style="font-size:0.72rem;color:var(--muted)">Requêtes complexes, ORM, Prisma</div>
+      <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="75" style="background:linear-gradient(90deg,#336791,#00b4d8)"></div></div>
+      <span class="skill-pct">75%</span>
+    </div>
+
+    <div class="skill-card tilt-card reveal" data-delay="0.6">
+      <div class="skill-lang">
+        <div class="skill-icon" style="background:#e4405f22">🐳</div>
+        Docker / DevOps
+      </div>
+      <div style="font-size:0.72rem;color:var(--muted)">Containers, CI/CD, Nginx, VPS</div>
+      <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="70" style="background:linear-gradient(90deg,#2496ed,#0e76a8)"></div></div>
+      <span class="skill-pct">70%</span>
+    </div>
+
+    <div class="skill-card tilt-card reveal" data-delay="0.7">
+      <div class="skill-lang">
+        <div class="skill-icon" style="background:#ff000022">💎</div>
+        CSS / TailwindCSS
+      </div>
+      <div style="font-size:0.72rem;color:var(--muted)">Animations, Grid, Responsive</div>
+      <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="95" style="background:linear-gradient(90deg,#38bdf8,#818cf8)"></div></div>
+      <span class="skill-pct">95%</span>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" style="min-height:auto">
+  <div class="section-header reveal">
+    <span class="section-num">02</span>
+    <h2 class="section-title">Projets</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="projects-grid">
+
+    <div class="project-card tilt-card reveal">
+      <div class="project-num">// Projet 01</div>
+      <div class="project-thumb" style="background:linear-gradient(135deg,#0d1b2a,#1b263b)">
+        <span>🛒</span>
+      </div>
+      <h3 class="project-title">E-Commerce Platform</h3>
+      <p class="project-desc">Plateforme e-commerce complète avec paiement en ligne, gestion des stocks et dashboard admin en temps réel.</p>
+      <div class="project-tags">
+        <span class="tag">Next.js</span>
+        <span class="tag">Stripe</span>
+        <span class="tag">Prisma</span>
+        <span class="tag">PostgreSQL</span>
+      </div>
+      <a href="#" class="project-link">Voir le projet →</a>
+    </div>
+
+    <div class="project-card tilt-card reveal">
+      <div class="project-num">// Projet 02</div>
+      <div class="project-thumb" style="background:linear-gradient(135deg,#0a0f1e,#1a0533)">
+        <span>🤖</span>
+      </div>
+      <h3 class="project-title">AI Chat Assistant</h3>
+      <p class="project-desc">Application de chat alimentée par IA avec mémoire contextuelle, support multi-modèles et interface temps réel via WebSockets.</p>
+      <div class="project-tags">
+        <span class="tag">React</span>
+        <span class="tag">Python</span>
+        <span class="tag">FastAPI</span>
+        <span class="tag">OpenAI API</span>
+      </div>
+      <a href="#" class="project-link">Voir le projet →</a>
+    </div>
+
+    <div class="project-card tilt-card reveal">
+      <div class="project-num">// Projet 03</div>
+      <div class="project-thumb" style="background:linear-gradient(135deg,#001a0f,#003d1a)">
+        <span>📊</span>
+      </div>
+      <h3 class="project-title">Analytics Dashboard</h3>
+      <p class="project-desc">Tableau de bord analytique avec visualisations de données interactives, rapports exportables et filtres avancés en temps réel.</p>
+      <div class="project-tags">
+        <span class="tag">TypeScript</span>
+        <span class="tag">D3.js</span>
+        <span class="tag">Node.js</span>
+        <span class="tag">MongoDB</span>
+      </div>
+      <a href="#" class="project-link">Voir le projet →</a>
+    </div>
+
+    <div class="project-card tilt-card reveal">
+      <div class="project-num">// Projet 04</div>
+      <div class="project-thumb" style="background:linear-gradient(135deg,#1a0a00,#3d1a00)">
+        <span>📱</span>
+      </div>
+      <h3 class="project-title">App Mobile Social</h3>
+      <p class="project-desc">Réseau social mobile avec géolocalisation, messagerie instantanée et fil d'actualité personnalisé par algorithme.</p>
+      <div class="project-tags">
+        <span class="tag">React Native</span>
+        <span class="tag">Firebase</span>
+        <span class="tag">Maps API</span>
+      </div>
+      <a href="#" class="project-link">Voir le projet →</a>
+    </div>
+
+    <div class="project-card tilt-card reveal">
+      <div class="project-num">// Projet 05</div>
+      <div class="project-thumb" style="background:linear-gradient(135deg,#0a1520,#0e2a40)">
+        <span>🔐</span>
+      </div>
+      <h3 class="project-title">Auth Microservice</h3>
+      <p class="project-desc">Service d'authentification JWT/OAuth sécurisé avec 2FA, gestion des rôles et intégration SSO pour entreprises.</p>
+      <div class="project-tags">
+        <span class="tag">Node.js</span>
+        <span class="tag">JWT</span>
+        <span class="tag">OAuth 2.0</span>
+        <span class="tag">Redis</span>
+      </div>
+      <a href="#" class="project-link">Voir le projet →</a>
+    </div>
+
+    <div class="project-card tilt-card reveal">
+      <div class="project-num">// Projet 06</div>
+      <div class="project-thumb" style="background:linear-gradient(135deg,#1a0a1a,#2d0f3a)">
+        <span>🎮</span>
+      </div>
+      <h3 class="project-title">Game Platform 3D</h3>
+      <p class="project-desc">Plateforme de jeux web avec rendu 3D temps réel, multijoueur en ligne et système de classement mondial.</p>
+      <div class="project-tags">
+        <span class="tag">Three.js</span>
+        <span class="tag">WebSockets</span>
+        <span class="tag">React</span>
+        <span class="tag">Blender</span>
+      </div>
+      <a href="#" class="project-link">Voir le projet →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- CV DOWNLOAD -->
+<section id="cv" style="min-height:auto">
+  <div class="section-header reveal">
+    <span class="section-num">03</span>
+    <h2 class="section-title">Mon CV</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="cv-container reveal">
+    <div class="cv-text">
+      <h2>Prêt à collaborer ?</h2>
+      <p>Téléchargez mon CV complet pour découvrir mon parcours,<br>mes formations et mes expériences professionnelles.</p>
+    </div>
+    <a href="#" class="cv-download-btn" onclick="downloadCV(event)">
+      <span class="dl-icon">↓</span>
+      Télécharger CV.pdf
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 RASOLOMON Mandaniaina F — Construit avec passion à Madagascar ❤️</p>
+</footer>
+
+<script src="main.js"></script>
+
+</body>
+</html>
